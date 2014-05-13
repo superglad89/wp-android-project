@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hallo, ini halaman utama</string>
+    <string name="app_name">Worked Profile</string>
+    <string name="image_des">Menu Button</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    <string name="user_agent_suffix">WorkedProfile/1.0</string>
+    
+    <string name="login_bg1">Better Work</string>
+    <string name="login_bg2">Better People</string>
+    <string name="login_bg3">Be More Productive</string>
+    <string name="login_bg4">Right Man In The Right Place</string>
+
+</resources>

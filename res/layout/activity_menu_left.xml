@@ -1,0 +1,423 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drop_shadow"
+    tools:context=".Home" >
+
+    
+    <RelativeLayout
+	     android:id="@+id/Setting_header"
+	     android:layout_width="fill_parent"
+	     android:clickable="false"
+	     android:layout_marginBottom="1dip"
+	     android:background="#C3C2C2"
+	     android:layout_height="45dip" >
+          		    
+		<ImageButton
+		android:id="@+id/message"
+        android:layout_width="35dip"
+		android:layout_height="35dip"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+        android:background="@drawable/button_hover"
+        android:layout_marginLeft="5dip"
+        android:src="@drawable/message" />	
+          	
+          	<TextView
+	        android:id="@+id/notifcation_message"
+	        android:layout_width="25dip"
+	        android:layout_height="25dip"
+	        android:layout_toRightOf="@+id/message"
+	        android:padding="4dip"
+	        android:layout_marginTop="4dip"
+	        android:layout_marginLeft="2dip"
+	        android:background="@drawable/shape_notification"
+	        android:text="10"
+	        android:gravity="center"
+	        android:textColor="@color/holo_orange_dark" />
+          	
+  
+        <ImageButton
+		android:id="@+id/notif"
+        android:layout_width="35dip"
+		android:layout_height="35dip"
+		android:layout_centerInParent="true"
+        android:background="@drawable/button_hover"
+        android:src="@drawable/notif" />	
+          	
+		    <TextView
+		        android:id="@+id/notifcation_textview"
+		        android:layout_width="25dip"
+	        	android:layout_height="25dip"
+		        android:layout_toRightOf="@+id/notif"
+		        android:padding="4dip"
+		        android:layout_marginTop="4dip"
+		        android:layout_marginLeft="2dip"
+		        android:background="@drawable/shape_notification"
+		        android:text="10"
+		        android:gravity="center"
+		        android:textColor="@color/holo_orange_dark" />
+          	
+    
+       <ImageButton
+		android:id="@+id/setting"
+        android:layout_width="35dip"
+		android:layout_height="35dip"
+		android:layout_marginRight="10dip"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+        android:background="@drawable/button_hover"
+        android:src="@drawable/setting" />	
+          	
+          	
+        </RelativeLayout>	  
+         
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/Setting_header"
+        android:background="#D2D1D1" >
+
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+        <RelativeLayout
+	     android:id="@+id/Home"
+	     android:layout_width="fill_parent"
+	     android:clickable="true"
+	     android:layout_marginBottom="1dip"
+	     android:background="@drawable/list_menu_selector"
+	     android:layout_height="100dip" >
+          	
+          	<ImageView     
+			android:id="@+id/menuIcon"   
+	        android:layout_width="85dip"
+	        android:layout_height="85dip"
+	        android:layout_marginLeft="10dip"
+	         android:layout_marginRight="4dip"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:src="@drawable/soraya" 
+	        />
+          	
+          	<TextView
+                android:id="@+id/text_home"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/menuIcon"
+                android:layout_marginLeft="2dip"
+                android:textSize="19dip"
+                android:layout_marginTop="4dip"
+                android:layout_marginBottom="4dip"
+                android:textColor="#181818"
+                android:text="Home" />
+               	
+          	<TextView
+                android:id="@+id/text_job"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/menuIcon"
+                android:layout_below="@+id/text_home"
+                android:layout_marginLeft="2dip"
+                android:textSize="14dip"
+                android:textColor="#181818"
+                android:text="Soraya has a new connection" />
+          	
+          	
+        </RelativeLayout>	
+         
+         
+         <RelativeLayout
+	     android:id="@+id/MyProfile"
+	     android:layout_width="fill_parent"
+	     android:clickable="true"
+	     android:layout_marginBottom="1dip"
+	     android:background="@drawable/list_menu_selector"
+	     android:layout_height="100dip" >
+          	
+          	<ImageView     
+			android:id="@+id/menuIcon"   
+	        android:layout_width="85dip"
+	        android:layout_height="85dip"
+	        android:layout_marginLeft="10dip"
+	         android:layout_marginRight="4dip"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:src="@drawable/foto" 
+	        />
+          	
+          	<TextView
+                android:id="@+id/text_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/menuIcon"
+                android:layout_marginLeft="2dip"
+                android:textSize="19dip"
+                android:layout_marginTop="4dip"
+                android:layout_marginBottom="4dip"
+                android:textColor="#181818"
+                android:text="Name" />
+               	
+          	<TextView
+                android:id="@+id/text_job"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/menuIcon"
+                android:layout_below="@+id/text_name"
+                android:layout_marginLeft="2dip"
+                android:textSize="14dip"
+                android:textColor="#181818"
+                android:text="Web Developer" />
+          	
+          	<TextView
+                android:id="@+id/text_company"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/menuIcon"
+                android:layout_below="@+id/text_job"
+                android:layout_marginLeft="2dip"
+                android:textSize="14dip"
+                android:textColor="#181818"
+                android:text="PT. Nusa Mandiri" />
+          	
+        </RelativeLayout>	
+        
+       
+         <RelativeLayout
+	     android:id="@+id/People"
+	     android:layout_width="fill_parent"
+	     android:clickable="true"
+	     android:layout_marginBottom="1dip"
+	     android:background="@drawable/list_menu_selector"
+	     android:layout_height="45dip" >
+          	
+          	<ImageView     
+			android:id="@+id/menuIcon"   
+	        android:layout_width="25dip"
+	        android:layout_height="25dip"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="4dip"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:src="@drawable/people_add" 
+	        />
+          	
+          	<TextView
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/menuIcon"
+                android:layout_marginLeft="4dip"
+                android:textSize="15dip"
+                android:textColor="#181818"
+                android:layout_centerVertical="true"
+                android:text="People You May Know" />
+          	
+        </RelativeLayout>	
+        
+          
+         <RelativeLayout
+	     android:id="@+id/Connections"
+	     android:layout_width="fill_parent"
+	     android:clickable="true"
+	     android:layout_marginBottom="1dip"
+	     android:background="@drawable/list_menu_selector"
+	     android:layout_height="45dip" >
+          	
+          	<ImageView     
+			android:id="@+id/menuIcon"   
+	        android:layout_width="25dip"
+	        android:layout_height="25dip"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="4dip"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:src="@drawable/connection" 
+	        />
+          	
+          	<TextView
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/menuIcon"
+                android:layout_marginLeft="4dip"
+                android:textSize="15dip"
+                android:textColor="#181818"
+                android:layout_centerVertical="true"
+                android:text="Connections" />
+          	
+        </RelativeLayout>	
+        
+         <RelativeLayout
+	     android:id="@+id/Jobs"
+	     android:layout_width="fill_parent"
+	     android:clickable="true"
+	     android:layout_marginBottom="1dip"
+	     android:background="@drawable/list_menu_selector"
+	     android:layout_height="45dip" >
+          	
+          	<ImageView     
+			android:id="@+id/menuIcon"   
+	        android:layout_width="25dip"
+	        android:layout_height="25dip"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="4dip"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:src="@drawable/jobs" 
+	        />
+          	
+          	<TextView
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/menuIcon"
+                android:layout_marginLeft="4dip"
+                android:textSize="15dip"
+                android:textColor="#181818"
+                android:layout_centerVertical="true"
+                android:text="Jobs" />
+          	
+        </RelativeLayout>	
+        
+         
+         
+         <RelativeLayout
+	     android:id="@+id/Project"
+	     android:layout_width="fill_parent"
+	     android:clickable="true"
+	     android:layout_marginBottom="1dip"
+	     android:background="@drawable/list_menu_selector"
+	     android:layout_height="45dip" >
+          	
+          	<ImageView     
+			android:id="@+id/menuIcon"   
+	        android:layout_width="25dip"
+	        android:layout_height="25dip"
+	         android:layout_marginLeft="10dip"
+	         android:layout_marginRight="4dip"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:src="@drawable/project" 
+	        />
+          	
+          	<TextView
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/menuIcon"
+                android:layout_marginLeft="4dip"
+                android:textSize="15dip"
+                android:textColor="#181818"
+                android:layout_centerVertical="true"
+                android:text="Project" />
+          	
+        </RelativeLayout>	
+         
+         <RelativeLayout
+	     android:id="@+id/Store"
+	     android:layout_width="fill_parent"
+	     android:clickable="true"
+	     android:layout_marginBottom="1dip"
+	     android:background="@drawable/list_menu_selector"
+	     android:layout_height="45dip" >
+          	
+          	<ImageView     
+			android:id="@+id/menuIcon"   
+	        android:layout_width="25dip"
+	        android:layout_height="25dip"
+	         android:layout_marginLeft="10dip"
+	         android:layout_marginRight="4dip"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:src="@drawable/store" 
+	        />
+          	
+          	<TextView
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/menuIcon"
+                android:layout_marginLeft="4dip"
+                android:textSize="15dip"
+                android:textColor="#181818"
+                android:layout_centerVertical="true"
+                android:text="Store" />
+          	
+        </RelativeLayout> 
+         
+         
+        <RelativeLayout
+	     android:id="@+id/Companies"
+	     android:layout_width="fill_parent"
+	     android:clickable="true"
+	     android:layout_marginBottom="1dip"
+	     android:background="@drawable/list_menu_selector"
+	     android:layout_height="45dip" >
+          	
+          	<ImageView     
+			android:id="@+id/menuIcon"   
+	        android:layout_width="25dip"
+	        android:layout_height="25dip"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="4dip"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:src="@drawable/companies" 
+	        />
+          	
+          	<TextView
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/menuIcon"
+                android:layout_marginLeft="4dip"
+                android:textSize="15dip"
+                android:textColor="#181818"
+                android:layout_centerVertical="true"
+                android:text="Companies" />
+          	
+        </RelativeLayout>	
+        
+        <RelativeLayout
+	     android:id="@+id/Groups"
+	     android:layout_width="fill_parent"
+	     android:clickable="true"
+	     android:layout_marginBottom="1dip"
+	     android:background="@drawable/list_menu_selector"
+	     android:layout_height="45dip" >
+          	
+          	<ImageView     
+			android:id="@+id/menuIcon"   
+	        android:layout_width="25dip"
+	        android:layout_height="25dip"
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="4dip"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentLeft="true"
+	        android:src="@drawable/groups" 
+	        />
+          	
+          	<TextView
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/menuIcon"
+                android:layout_marginLeft="4dip"
+                android:textSize="15dip"
+                android:textColor="#181818"
+                android:layout_centerVertical="true"
+                android:text="Groups" />
+          	
+        </RelativeLayout>	
+        
+        
+       </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

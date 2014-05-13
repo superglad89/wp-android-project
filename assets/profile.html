@@ -1,0 +1,457 @@
+  
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WorkedProfile</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="style/css/bootstrap.css" rel="stylesheet">
+    <link href="style/css/mmenu/jquery.mmenu.all.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="style/css/style.css" rel="stylesheet">
+
+    <script src="style/js/jquery-1.10.2.min.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="style/js/html5shiv.js"></script>
+      <script src="style/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="style/img/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="style/img/ico/favicon.ico">
+  </head>
+  <body>
+
+  <div class="detail-banner">
+    <div class="cover">
+      <div class="cover-img" style="background-image: url(style/img/media/banner-profile.jpg); background-size: cover; width: 100%; height: 100%; -webkit-background-size: cover; background-position: 50% 50%; background-repeat: no-repeat no-repeat;"></div>
+    </div>
+    <div class="row unrow desc">
+      <div class="col-xs-6 col-sm-6 col-xs-6 uncol">
+        <div class="padding2 desc-profile">
+          <form method="post" id="editidentity" name="editidentity" action="/mobileweb/control/edit-identity">     
+            <a id="editIdentityLink">
+              <input type="hidden" name="PersonId" value="Sigit.Setiaji">
+              <div class="media-body">
+                <h4 class="texts-2line">Jealousi Arsyah</h4>
+                <h2 class="texts-1line">PT Worked Profile</h2>
+                <span class="texts-1line">IT Programmer at PT. Worked Profile</span>
+                <p class="texts-1line"></p>
+                <p class"texts-1line"=""></p>
+              </div>
+            </a>
+          </form>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-xs-6 uncol">
+        <div style="position: absolute; top: 10px; right: 10px;">
+          <h4 style="cursor:pointer" id="editProfile" onClick="ProfileEdit()">Edit</h4>
+        </div>
+        <div style="position: absolute; top: 120px; right: 10px;">
+          <button type="button" class="btn btn-setting" onclick="openAndroidDialog()"><i class="ico-setting"></i></button>
+        </div>  
+        <div class="photo-profile">
+          <div class="cover-img" style="background-image: url(style/img/media/arsyah.jpg); background-size: cover; width: 100%; height: 100%; -webkit-background-size: cover; background-position: 50% 50%; background-repeat: no-repeat no-repeat;"></div>
+          <div class="btn-upload" style="display:none">
+            <button type="button" class="btn btn-transparent-radius pull-right" onclick="openAndroidDialog()"><i class="ico-camera"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <p class="tittle">Description</p>
+  <form method="post" id="editsummary" name="editsummary" action="/mobileweb/control/edit-summary">      
+      <a id="editsummaryLink">
+        <input type="hidden" name="PersonId" value="Sigit.Setiaji">
+    <div class="modul-box detail-description">
+      <p>
+          Description your self
+        </p>
+    </div>
+    </a>
+    </form>
+  
+  
+  <p class="tittle">Experience</p>
+    <form method="post" id="addexperience" name="addexperience" action="/mobileweb/control/add-experience">      
+        <a class="addexperienceLink" style="display:none" href="javascript:document.addexperience.submit()">
+          <input type="hidden" name="PersonId" value="Sigit.Setiaji">
+      <div class="modul-tittle">
+        <i class="ico-plus"></i> <b class="font-judul">Add a new job</b>
+      </div>
+    </a>
+        </form>        
+    <ul class="list">
+      <li>
+        <form method="post" id="editexperience14" name="editexperience14" action="/mobileweb/control/edit-experience">
+              <a class="editexperienceListLink" href="javascript:document.editexperience14.submit()" style="display:none">
+                  <input type="hidden" name="PartyRelationshipId" value="14">
+          <div class="detail-description">
+            <div class="chevron-blue">
+              <h4>PT Worked Profile</h4>
+              <i></i>
+              <i>May 2012
+                        &nbsp;-&nbsp;
+                                                Present
+                        </i>
+                      </div>
+          </div>
+        </a>
+        <a class="editexperienceListNoLink" style="display:block">
+          <div class="detail-description">
+            <div>
+              <h4>PT Worked Profile</h4>
+              <i></i>
+              <i>May 2012
+                        &nbsp;-&nbsp;
+                                                Present
+                        </i>
+                      </div>
+          </div>
+        </a>
+              </form> 
+      </li>     
+    </ul>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        
+        <p class="tittle">Education</p>
+    <form method="post" id="addeducation" name="addeducation" action="/mobileweb/control/add-education">     
+              <a class="addeducationLink" style="display:none" href="javascript:document.addeducation.submit()">
+              <input type="hidden" name="PersonId" value="Sigit.Setiaji"> 
+      <div class="modul-tittle">
+        <i class="ico-plus"></i> <b class="font-judul">Add a scholl or collage</b>
+      </div>
+    </a>
+        </form>
+    
+    <ul class="list">
+      <li>
+        <form method="post" id="editeducation4" name="editeducation4" action="/mobileweb/control/edit-education">      
+              <a class="editeducationListLink" href="javascript:document.editeducation4.submit()" style="display:none">
+                <input type="hidden" name="PartyRelationshipId" value="4"> 
+          <div class="detail-description">
+            <div class="chevron-blue">
+              <h4>AMIK Bina Sarana Informatika</h4>
+              <i></i>
+              <i>2000
+                        &nbsp;-&nbsp;
+                        2004 </i>
+                        <i></i>
+                      </div>
+          </div>
+        </a>
+        <a class="editeducationListNoLink" style="display:block">
+          <div class="detail-description">
+            <div>
+              <h4>AMIK Bina Sarana Informatika</h4>
+              <i></i>
+              <i>2000
+                        &nbsp;-&nbsp;
+                        2004 </i>
+                        <i></i>
+                      </div>
+          </div>
+        </a>
+              </form>
+      </li>
+    </ul>
+    <ul class="list">
+      <li>
+        <form method="post" id="editeducation5" name="editeducation5" action="/mobileweb/control/edit-education">      
+              <a class="editeducationListLink" href="javascript:document.editeducation5.submit()" style="display:none">
+                <input type="hidden" name="PartyRelationshipId" value="5"> 
+          <div class="detail-description">
+            <div class="chevron-blue">
+              <h4>STMIK Nusa Mandiri</h4>
+              <i></i>
+              <i>2006
+                        &nbsp;-&nbsp;
+                        2008 </i>
+                        <i></i>
+                      </div>
+          </div>
+        </a>
+        <a class="editeducationListNoLink" style="display:block">
+          <div class="detail-description">
+            <div>
+              <h4>STMIK Nusa Mandiri</h4>
+              <i></i>
+              <i>2006
+                        &nbsp;-&nbsp;
+                        2008 </i>
+                        <i></i>
+                      </div>
+          </div>
+        </a>
+              </form>
+      </li>
+    </ul>
+        
+        
+        
+        
+        
+        
+        
+        
+        <p class="tittle">Website</p>
+    <form method="post" id="addwebsite" name="addwebsite" action="/mobileweb/control/add-website">     
+              <a class="addwebsiteLink" href="javascript:document.addwebsite.submit()" style="display:none">
+                <input type="hidden" name="PersonId" value="Sigit.Setiaji">
+      <div class="modul-tittle">
+        <i class="ico-plus"></i> <b class="font-judul">Add a website</b>
+      </div>
+    </a>
+        </form>
+    
+        
+        
+    
+    <p class="tittle">Contact Information</p>
+    <form method="post" id="editcontact" name="editcontact" action="/mobileweb/control/edit-contact"> 
+    <a class="editcontactListLink" href="javascript:document.editcontact.submit()" style="display:none">
+      <div class="detail-description">
+        Email:<br>
+        <h4>setiaji24@gmail.com</h4><br>Phone Number:<br>
+                    <h4><small>
+                    
+                    0218893704  (Home Phone)
+                    </small></h4>               
+                                    <h4><small>
+                    
+                    085691492007  (Mobile Phone)
+                    </small></h4>               
+                <br>Address:<br>
+        <i>Jl. Bintara 6 Rt.004/06 No.17</i>
+      </div>
+    </a>
+    <a class="editcontactListNoLink" style="display:block">
+      <div class="detail-description">
+        Email:<br>
+        <h4>setiaji24@gmail.com</h4><br>Phone Number:<br>
+                    <h4><small>
+                    
+                    0218893704  (Home Phone)
+                    </small></h4>               
+                                    <h4><small>
+                    
+                    085691492007  (Mobile Phone)
+                    </small></h4>               
+                <br>Address:<br>
+        <i>Jl. Bintara 6 Rt.004/06 No.17</i>
+      </div>
+    </a>
+    </form>
+    
+
+<!--
+-->
+
+  <!--<p class="tittle">Portofolio Video</p>
+    <form method="post" id="addportofoliovideo" name="addportofoliovideo" action="/mobileweb/control/addPortofolioVideo" >     
+              <a class="addportofolioLink" style="display:none" href="javascript:document.addportofoliovideo.submit()">
+              <input type="hidden" name="PersonId" value="Sigit.Setiaji" />
+      <div class="modul-tittle">
+        <i class="ico-plus"></i> <b class="font-judul">Add a portofolio (video)</b>
+      </div>
+    </a>
+      <div class="detail-description">
+        <div class="carousel slide" id="video-karya">
+      <div class="carousel-inner">        
+        <div class="item active">
+          <div class="col-xs-4 col-sm-4 col-md-4 uncol">
+            <a href="http&#58;&#47;&#47;www.youtube.com&#47;watch&#63;v&#61;-cN6nICpYzk?autoplay=1" rel="prettyPhoto[mixed]">
+              <div class="thmb"><img src="http&#58;&#47;&#47;www.youtube.com&#47;watch&#63;v&#61;-cN6nICpYzk/hqdefault.jpg" class="img-responsive convert-img"></div>
+            </a>
+          </div>
+        </div>
+        <div class="item active">
+          <div class="col-xs-4 col-sm-4 col-md-4 uncol">
+            <a href="http&#58;&#47;&#47;www.youtube.com&#47;watch&#63;v&#61;fn9w6PTUSmk?autoplay=1" rel="prettyPhoto[mixed]">
+              <div class="thmb"><img src="http&#58;&#47;&#47;www.youtube.com&#47;watch&#63;v&#61;fn9w6PTUSmk/hqdefault.jpg" class="img-responsive convert-img"></div>
+            </a>
+          </div>
+        </div>
+        <div class="item active">
+          <div class="col-xs-4 col-sm-4 col-md-4 uncol">
+            <a href="http&#58;&#47;&#47;www.youtube.com&#47;watch&#63;v&#61;pdppSYI_ZP0?autoplay=1" rel="prettyPhoto[mixed]">
+              <div class="thmb"><img src="http&#58;&#47;&#47;www.youtube.com&#47;watch&#63;v&#61;pdppSYI_ZP0/hqdefault.jpg" class="img-responsive convert-img"></div>
+            </a>
+          </div>
+        </div>
+        <div class="item active">
+          <div class="col-xs-4 col-sm-4 col-md-4 uncol">
+            <a href="http&#58;&#47;&#47;www.youtube.com&#47;watch&#63;v&#61;FsbK4iEhehk?autoplay=1" rel="prettyPhoto[mixed]">
+              <div class="thmb"><img src="http&#58;&#47;&#47;www.youtube.com&#47;watch&#63;v&#61;FsbK4iEhehk/hqdefault.jpg" class="img-responsive convert-img"></div>
+            </a>
+          </div>
+        </div>
+        </div>
+        <a class="left carousel-control" href="#video-karya" data-slide="prev"><i class="ico-prev"></i></a>
+        <a class="right carousel-control" href="#video-karya" data-slide="next"><i class="ico-next"></i></a>
+    </div>
+      </div>
+    -->
+    
+
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="style/js/bootstrap.min.js"></script>
+    <script src="style/js/mmenu/jquery.mmenu.js"></script>
+    <script src="style/js/jquery.prettyPhoto.js"></script>
+    <script src="style/js/custom.js"></script>
+    <script src="style/js/jquery.cookie.js"></script>
+    
+      <!-- Android JavaScript -->
+    <script language="javascript">
+    
+		 function callFromActivity(msg){
+		document.getElementById("mytext").innerHTML = msg;
+		}
+		
+		function ProfileEdit() {
+        AndroidFunction.ProfileEdit();
+		}
+		
+		function openAndroidDialog() {
+        AndroidFunction.openAndroidDialog();
+		}
+		
+	</script>  
+
+        <script>
+      // Retrieve Page
+      (function( $ ){
+        $.fn.sp = function() {
+          $.ajax({
+            url: "project-directory",
+            cache: false
+          })
+            .done(function( html ) {
+            $( "#search-project" ).append( html );
+            });
+        };
+        $.fn.spe = function() {
+          $.ajax({
+            url: "professional-directory",
+            cache: false
+          })
+            .done(function( html ) {
+           
+              $( "#search-people" ).append( html );
+            });
+        };
+        $.fn.sj = function() {
+          $.ajax({
+            url: "job-directory",
+            cache: false
+          })
+            .done(function( html ) {
+              $( "#search-job" ).append( html );
+            });
+        };
+        $.fn.ss = function() {
+          $.ajax({
+            url: "storeProductCategory",
+            cache: false
+          })
+            .done(function( html ) {
+          
+              $( "#search-store" ).append( html );
+              // $( this ).seAll();
+            });
+        }; /*
+        $.fn.spf = function() {
+          $.ajax({
+            url: "profile",
+            cache: false
+          })
+            .done(function( html ) {
+              $( "#search-profile" ).append( html );
+              // $( this ).seAll();
+            });
+        }; */
+
+        // Show it up
+        $('html').sp();
+        $('html').spe();
+        $('html').sj();
+        $('html').ss();
+        // $('html').spf();
+      })( jQuery );
+
+      // Bind Search
+      $('#sall').bind('input', function() { 
+
+        // show on console log the current value of the input field.
+        // console.log($(this).val());
+
+        var sall = $(this).val();
+
+        $.ajax({
+          url: "search-project",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {
+            $( "#pageproject" ).remove();      
+            $( "#pagecontent" ).remove();      
+            $( "#search-project" ).append( html );
+          });          
+        
+        $.ajax({
+          url: "search-job",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {     
+            $( "#pagecontent" ).remove(); 
+            $( "#pagejob" ).remove();             
+            $( "#search-job" ).append( html );
+          });
+
+        $.ajax({
+          url: "search-people",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {     
+            $( "#pagecontent" ).remove(); 
+            $( "#pagepeople" ).remove();          
+            $( "#search-people" ).append( html );
+          });        
+        
+        $.ajax({
+          url: "search-store",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {     
+            $( "#pagecontent" ).remove(); 
+            $( "#pagestore" ).remove();         
+            $( "#search-store" ).append( html );
+          });
+      });
+    </script>
+
+  </body>
+</html>

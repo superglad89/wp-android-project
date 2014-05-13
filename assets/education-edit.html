@@ -1,0 +1,314 @@
+  
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WorkedProfile</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="style/css/bootstrap.css" rel="stylesheet">
+    <link href="style/css/mmenu/jquery.mmenu.all.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="style/css/style.css" rel="stylesheet">
+
+    <script src="style/js/jquery-1.10.2.min.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="style/js/html5shiv.js"></script>
+      <script src="style/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="style/img/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="style/img/ico/favicon.ico">
+  </head>
+  <body>
+    <div class="grey">
+<div class="padding">
+    <p class="tittle"><font><font>Add school or collage</font></font></p>
+    <form name="formaddeducation" id="formaddeducation" action="/mobileweb/control/form-add-education" method="post">
+    <!-- Modul Name School -->
+    <div class="modul-box">
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 line-height"><font><font>
+          School
+        </font></font></div>
+        <div class="col-xs-8 col-sm-8 col-md-8">
+          <input type="text" class="form-flat" id="school" name="school" placeholder="School">
+          <input type="hidden" id="partyIdFrom" name="partyIdFrom" value="Jealousi.Arsyah">
+          <input type="hidden" id="partyIdTo" name="partyIdTo">
+          <div id="acad"></div>
+        </div>
+      </div>
+    </div>
+    <p class="tittle"><font><font>Optional</font></font></p>
+    <!-- Modul Start Schooll -->
+    <div class="modul-box">
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 line-height"><font><font>
+          Start Year
+        </font></font></div>
+        <div class="col-xs-8 col-sm-8 col-md-8">
+          <select name="start-year" class="form-flat pull-right">
+            <option value="empty" selected="selected"><font><font>Start Year</font></font></option>
+            <option><font><font>2014</font></font></option>
+            <option><font><font>2013</font></font></option>
+            <option><font><font>2012</font></font></option>
+            <option><font><font>2011</font></font></option>
+            <option><font><font>2010</font></font></option>
+            <option><font><font>2009</font></font></option>
+            <option><font><font>2008</font></font></option>
+            <option><font><font>2007</font></font></option>
+            <option><font><font>2006</font></font></option>
+            <option><font><font>2005</font></font></option>
+            <option><font><font>2004</font></font></option>
+            <option><font><font>2003</font></font></option>
+            <option><font><font>2002</font></font></option>
+            <option><font><font>2001</font></font></option>
+            <option><font><font>2000</font></font></option>
+            <option><font><font>1999</font></font></option>
+            <option><font><font>1998</font></font></option>
+            <option><font><font>1997</font></font></option>
+            <option><font><font>1996</font></font></option>
+            <option><font><font>1995</font></font></option>
+            <option><font><font>1994</font></font></option>
+            <option><font><font>1993</font></font></option>
+            <option><font><font>1992</font></font></option>
+            <option><font><font>1991</font></font></option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- Modul End Schooll -->
+    <div class="modul-box">
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 line-height"><font><font>
+          End Year
+        </font></font></div>
+        <div class="col-xs-8 col-sm-8 col-md-8">
+          <select name="end-year" class="form-flat pull-right">
+            <option value="empty" selected="selected"><font><font>End Year</font></font></option>
+            <option><font><font>2014</font></font></option>
+            <option><font><font>2013</font></font></option>
+            <option><font><font>2012</font></font></option>
+            <option><font><font>2011</font></font></option>
+            <option><font><font>2010</font></font></option>
+            <option><font><font>2009</font></font></option>
+            <option><font><font>2008</font></font></option>
+            <option><font><font>2007</font></font></option>
+            <option><font><font>2006</font></font></option>
+            <option><font><font>2005</font></font></option>
+            <option><font><font>2004</font></font></option>
+            <option><font><font>2003</font></font></option>
+            <option><font><font>2002</font></font></option>
+            <option><font><font>2001</font></font></option>
+            <option><font><font>2000</font></font></option>
+            <option><font><font>1999</font></font></option>
+            <option><font><font>1998</font></font></option>
+            <option><font><font>1997</font></font></option>
+            <option><font><font>1996</font></font></option>
+            <option><font><font>1995</font></font></option>
+            <option><font><font>1994</font></font></option>
+            <option><font><font>1993</font></font></option>
+            <option><font><font>1992</font></font></option>
+            <option><font><font>1991</font></font></option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- Modul Degree -->
+    <div class="modul-box">
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 line-height"><font><font>
+          Degree
+        </font></font></div>
+        <div class="col-xs-8 col-sm-8 col-md-8">
+          <input type="text" class="form-flat" id="degree" name="degree" placeholder="Degree">
+        </div>
+      </div>
+    </div>
+    <!-- Modul Degree -->
+    <div class="modul-box">
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 line-height"><font><font>
+          Field of study
+        </font></font></div>
+        <div class="col-xs-8 col-sm-8 col-md-8">
+          <input type="text" class="form-flat" id="fieldofstudy" name="fieldofstudy" placeholder="Field of Study">
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Modul Activity -->
+    <div class="modul-box">
+      <textarea type="text" class="form-flat" id="activity" name="activity" placeholder="Enter activities, societies and notes here..." rows="3"></textarea>
+    </div>
+    <br>
+    <!-- Modul Description -->
+    <div class="modul-box">
+      <textarea type="text" class="form-flat" id="description" name="description" placeholder="Enter a description..." rows="3"></textarea>
+    </div>
+    
+    <!-- Button Action -->
+    <br>
+    <div class="padding">
+      <div class="btn-group btn-group-justified">
+          <div class="btn-group">
+            <button type="submit" class="btn btn-red font-judul"><font><font>SAVE</font></font></button>
+          </div>
+          <div class="btn-group">
+            <a type="button" class="btn btn-grey font-judul" onClick="CancelEdit()"><font><font>CANCEL</font></font></a>
+        </div>
+      </div>
+    </div>
+    
+    </form>
+    
+  </div>
+  </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="style/js/bootstrap.min.js"></script>
+    <script src="style/js/mmenu/jquery.mmenu.js"></script>
+    <script src="style/js/jquery.prettyPhoto.js"></script>
+    <script src="style/js/custom.js"></script>
+    <script src="style/js/jquery.cookie.js"></script>
+    
+       <!-- Android JavaScript -->
+    <script language="javascript">
+    
+		 function callFromActivity(msg){
+		document.getElementById("mytext").innerHTML = msg;
+		}
+		
+		function CancelEdit(){
+        AndroidFunction.CancelEdit();
+		}
+		
+	</script>  
+
+        <script>
+      // Retrieve Page
+      (function( $ ){
+        $.fn.sp = function() {
+          $.ajax({
+            url: "project-directory",
+            cache: false
+          })
+            .done(function( html ) {
+            $( "#search-project" ).append( html );
+            });
+        };
+        $.fn.spe = function() {
+          $.ajax({
+            url: "professional-directory",
+            cache: false
+          })
+            .done(function( html ) {
+           
+              $( "#search-people" ).append( html );
+            });
+        };
+        $.fn.sj = function() {
+          $.ajax({
+            url: "job-directory",
+            cache: false
+          })
+            .done(function( html ) {
+              $( "#search-job" ).append( html );
+            });
+        };
+        $.fn.ss = function() {
+          $.ajax({
+            url: "storeProductCategory",
+            cache: false
+          })
+            .done(function( html ) {
+          
+              $( "#search-store" ).append( html );
+              // $( this ).seAll();
+            });
+        }; /*
+        $.fn.spf = function() {
+          $.ajax({
+            url: "profile",
+            cache: false
+          })
+            .done(function( html ) {
+              $( "#search-profile" ).append( html );
+              // $( this ).seAll();
+            });
+        }; */
+
+        // Show it up
+        $('html').sp();
+        $('html').spe();
+        $('html').sj();
+        $('html').ss();
+        // $('html').spf();
+      })( jQuery );
+
+      // Bind Search
+      $('#sall').bind('input', function() { 
+
+        // show on console log the current value of the input field.
+        // console.log($(this).val());
+
+        var sall = $(this).val();
+
+        $.ajax({
+          url: "search-project",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {
+            $( "#pageproject" ).remove();      
+            $( "#pagecontent" ).remove();      
+            $( "#search-project" ).append( html );
+          });          
+        
+        $.ajax({
+          url: "search-job",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {     
+            $( "#pagecontent" ).remove(); 
+            $( "#pagejob" ).remove();             
+            $( "#search-job" ).append( html );
+          });
+
+        $.ajax({
+          url: "search-people",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {     
+            $( "#pagecontent" ).remove(); 
+            $( "#pagepeople" ).remove();          
+            $( "#search-people" ).append( html );
+          });        
+        
+        $.ajax({
+          url: "search-store",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {     
+            $( "#pagecontent" ).remove(); 
+            $( "#pagestore" ).remove();         
+            $( "#search-store" ).append( html );
+          });
+      });
+    </script>
+
+  </body>
+</html>

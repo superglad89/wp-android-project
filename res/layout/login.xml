@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/widget50"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FFFFFF"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+	android:id="@+id/login_layout"
+	android:layout_width="fill_parent"
+	android:layout_centerInParent="true"
+	android:layout_height="285dp"
+	android:background="#FFFFFF">
+
+ <ImageView 
+    android:id="@+id/logo_image"
+	android:layout_centerHorizontal="true"
+	android:src="@drawable/header"
+	android:layout_height="50dp"
+	android:layout_width="220dp"
+ />
+    
+<EditText
+	android:id="@+id/username"
+	android:layout_width="255dp"
+	android:layout_height="wrap_content"
+	android:layout_centerHorizontal="true"
+	android:layout_below="@+id/logo_image"
+	android:background="@drawable/edittext_bg"
+    android:drawableLeft="@drawable/username"
+	android:layout_marginTop="10dp"
+	android:paddingLeft="4dip"
+	android:drawablePadding="2dip"
+	android:singleLine="true"
+	android:hint="Email"
+	android:inputType="textEmailAddress" 
+	android:textSize="18sp"
+	 />
+<EditText
+	android:id="@+id/password"
+	android:layout_width="255dp"
+	android:layout_height="wrap_content"
+	android:singleLine="true"
+	android:layout_centerInParent="true"
+	android:layout_marginTop="5dp"
+	android:layout_below="@+id/username"
+	android:background="@drawable/edittext_bg"
+    android:drawableLeft="@drawable/key"
+    android:paddingLeft="4dip"
+    android:drawablePadding="2dip"
+	android:inputType="textPassword"
+	android:hint="Password"
+	android:textSize="18sp"
+	 />
+<Button
+	android:id="@+id/button_login"
+	android:background="@drawable/blue_button"
+	style="@style/ButtonText"
+	android:layout_width="255dp"
+	android:layout_height="wrap_content"
+	android:layout_centerInParent="true"
+	android:layout_marginTop="10dip"
+	android:layout_below="@+id/password"
+	android:text="Sign In"
+	 />
+
+  <TextView
+	android:id="@+id/join"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_centerInParent="true"
+	android:layout_marginTop="7dp"
+	android:textSize="16dp"
+	android:textStyle="bold"
+	android:text="Join WorkedProfile"
+	android:textColor="#004CBF"
+	android:layout_below="@+id/button_login"
+	 /> 
+	 
+</RelativeLayout>
+
+<ListView
+    android:id="@id/android:list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/login_layout"
+    android:layout_weight="1"
+    android:visibility="gone"
+    android:drawSelectorOnTop="false" >
+</ListView>
+
+
+</RelativeLayout>

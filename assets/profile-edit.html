@@ -1,0 +1,351 @@
+  
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WorkedProfile</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="style/css/bootstrap.css" rel="stylesheet">
+    <link href="style/css/mmenu/jquery.mmenu.all.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="style/css/style.css" rel="stylesheet">
+
+    <script src="style/js/jquery-1.10.2.min.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="style/js/html5shiv.js"></script>
+      <script src="style/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="style/img/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="style/img/ico/favicon.ico">
+  </head>
+  <body>
+  <div id="pagecontent">
+<div class="grey" style="margin-top: -10px;">
+	<div class="detail-banner">
+		<div class="cover">
+			<div class="cover-img" style="background-image: url(style/img/media/banner-profile.jpg); background-size: cover; width: 100%; height: 100%; -webkit-background-size: cover; background-position: 50% 50%; background-repeat: no-repeat no-repeat;"></div>
+		</div>
+		<div class="row unrow desc">
+			<div class="col-xs-6 col-sm-6 col-xs-6 uncol">
+				<div class="padding2 desc-profile">
+					<form method="post" id="editidentity" name="editidentity" action="/mobileweb/control/edit-identity">     
+						<a id="editIdentityLink" href="javascript:document.editidentity.submit()">
+							<input type="hidden" name="PersonId" value="Jealousi.Arsyah">
+							<div class="media-body">
+								<h4 class="texts-2line">Jealousi Arsyah</h4>
+								<h2 class="texts-1line">PT Worked Profile</h2>
+								<span class="texts-1line"> at PT. Worked Profile</span>
+								<p class="texts-1line"></p>
+								<p class"texts-1line"=""></p>
+							</div>
+						</a>
+					</form>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-xs-6 uncol">
+			
+				<div class="photo-profile">
+					<div class="cover-img" style="background-image: url(style/img/media/arsyah.jpg); background-size: cover; width: 100%; height: 100%; -webkit-background-size: cover; background-position: 50% 50%; background-repeat: no-repeat no-repeat;"></div>
+					<div class="btn-upload" style="display: block;">
+						<button type="button" class="btn btn-transparent-radius pull-right" onClick="UploadPhoto()"><i class="ico-camera"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<p class="tittle">Description</p>
+	<form method="post" onClick="EditData()" id="editsummary" name="editsummary" action="/mobileweb/control/edit-summary">      
+    	<a id="editsummaryLink" >
+        <input type="hidden" name="PersonId" value="Jealousi.Arsyah">
+		<div class="modul-box detail-description">
+			<p>
+		    	Description your self
+		    </p>
+		</div>
+		</a>
+    </form>
+	
+	
+	<p class="tittle">Experience</p>
+		<form method="post" onClick="EditData()" id="addexperience" name="addexperience" action="/mobileweb/control/add-experience">      
+      	<a class="addexperienceLink" style="display: block;" >
+      		<input type="hidden" name="PersonId" value="Jealousi.Arsyah">
+			<div class="modul-tittle">
+				<i class="ico-plus"></i> <b class="font-judul">Add a new job</b>
+			</div>
+		</a>
+        </form>        
+		<ul class="list">
+			<li>
+				<form method="post" onClick="EditData()" id="editexperience11" name="editexperience11" action="/mobileweb/control/edit-experience">
+            	<a class="editexperienceListLink"  style="display: block;">
+              		<input type="hidden" name="PartyRelationshipId" value="11">
+					<div class="detail-description">
+						<div class="chevron-blue">
+							<h4>PT Worked Profile</h4>
+							<i></i>
+							<i>
+		                    &nbsp;-&nbsp;
+		                    		                    Present
+		                    </i>
+	                    </div>
+					</div>
+				</a>
+				<a class="editexperienceListNoLink" style="display: none;">
+					<div class="detail-description">
+						<div>
+							<h4>PT Worked Profile</h4>
+							<i></i>
+							<i>
+		                    &nbsp;-&nbsp;
+		                    		                    Present
+		                    </i>
+	                    </div>
+					</div>
+				</a>
+          		</form> 
+			</li>			
+		</ul>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+        
+        <p class="tittle">Education</p>
+		<form method="post" onClick="EditData()" id="addeducation" name="addeducation" action="/mobileweb/control/add-education">     
+              <a class="addeducationLink" style="display: block;" >
+              <input type="hidden" name="PersonId" value="Jealousi.Arsyah"> 
+			<div class="modul-tittle">
+				<i class="ico-plus"></i> <b class="font-judul">Add a scholl or collage</b>
+			</div>
+		</a>
+        </form>
+		
+        
+        
+        
+        
+        
+        
+        
+        
+        <p class="tittle">Website</p>
+		<form method="post" onClick="EditData()" id="addwebsite" name="addwebsite" action="/mobileweb/control/add-website">     
+              <a class="addwebsiteLink"  style="display: block;">
+                <input type="hidden" name="PersonId" value="Jealousi.Arsyah">
+			<div class="modul-tittle">
+				<i class="ico-plus"></i> <b class="font-judul">Add a website</b>
+			</div>
+		</a>
+        </form>
+		
+        
+        
+		
+		<p class="tittle">Contact Information</p>
+		<form method="post" onClick="EditData()" id="editcontact" name="editcontact" action="/mobileweb/control/edit-contact"> 
+		<a class="editcontactListLink" style="display: block;">
+			<div class="detail-description">
+				Email:<br>
+				<h4>pandorum.insane@gmail.com</h4><br>Phone Number:<br>
+                  	<h4><small>
+                    
+                    087884975009  (Mobile Phone)
+                    </small></h4>               
+                <br>Address:<br>
+				
+			</div>
+		</a>
+		<a class="editcontactListNoLink" style="display: none;">
+			<div class="detail-description">
+				Email:<br>
+				<h4>pandorum.insane@gmail.com</h4><br>Phone Number:<br>
+                  	<h4><small>
+                    
+                    087884975009  (Mobile Phone)
+                    </small></h4>               
+                <br>Address:<br>
+				
+			</div>
+		</a>
+		</form>
+		
+
+<!--
+-->
+
+	<!--<p class="tittle">Portofolio Video</p>
+		<form method="post" onClick="EditData()" id="addportofoliovideo" name="addportofoliovideo" action="/mobileweb/control/addPortofolioVideo" >     
+              <a class="addportofolioLink" style="display:none" >
+              <input type="hidden" name="PersonId" value="Jealousi.Arsyah" />
+			<div class="modul-tittle">
+				<i class="ico-plus"></i> <b class="font-judul">Add a portofolio (video)</b>
+			</div>
+		</a>
+-->
+		
+		
+
+</div>
+</div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="style/js/bootstrap.min.js"></script>
+    <script src="style/js/mmenu/jquery.mmenu.js"></script>
+    <script src="style/js/jquery.prettyPhoto.js"></script>
+    <script src="style/js/custom.js"></script>
+    <script src="style/js/jquery.cookie.js"></script>
+    
+       <!-- Android JavaScript -->
+    <script language="javascript">
+    
+		 function callFromActivity(msg){
+		document.getElementById("mytext").innerHTML = msg;
+		}
+		
+		function UploadPhoto(){
+        AndroidFunction.UploadPhoto();
+		}
+		
+		function EditData(){
+        AndroidFunction.EditData();
+		}
+		
+	</script>  
+
+        <script>
+      // Retrieve Page
+      (function( $ ){
+        $.fn.sp = function() {
+          $.ajax({
+            url: "project-directory",
+            cache: false
+          })
+            .done(function( html ) {
+            $( "#search-project" ).append( html );
+            });
+        };
+        $.fn.spe = function() {
+          $.ajax({
+            url: "professional-directory",
+            cache: false
+          })
+            .done(function( html ) {
+           
+              $( "#search-people" ).append( html );
+            });
+        };
+        $.fn.sj = function() {
+          $.ajax({
+            url: "job-directory",
+            cache: false
+          })
+            .done(function( html ) {
+              $( "#search-job" ).append( html );
+            });
+        };
+        $.fn.ss = function() {
+          $.ajax({
+            url: "storeProductCategory",
+            cache: false
+          })
+            .done(function( html ) {
+          
+              $( "#search-store" ).append( html );
+              // $( this ).seAll();
+            });
+        }; /*
+        $.fn.spf = function() {
+          $.ajax({
+            url: "profile",
+            cache: false
+          })
+            .done(function( html ) {
+              $( "#search-profile" ).append( html );
+              // $( this ).seAll();
+            });
+        }; */
+
+        // Show it up
+        $('html').sp();
+        $('html').spe();
+        $('html').sj();
+        $('html').ss();
+        // $('html').spf();
+      })( jQuery );
+
+      // Bind Search
+      $('#sall').bind('input', function() { 
+
+        // show on console log the current value of the input field.
+        // console.log($(this).val());
+
+        var sall = $(this).val();
+
+        $.ajax({
+          url: "search-project",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {
+            $( "#pageproject" ).remove();      
+            $( "#pagecontent" ).remove();      
+            $( "#search-project" ).append( html );
+          });          
+        
+        $.ajax({
+          url: "search-job",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {     
+            $( "#pagecontent" ).remove(); 
+            $( "#pagejob" ).remove();             
+            $( "#search-job" ).append( html );
+          });
+
+        $.ajax({
+          url: "search-people",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {     
+            $( "#pagecontent" ).remove(); 
+            $( "#pagepeople" ).remove();          
+            $( "#search-people" ).append( html );
+          });        
+        
+        $.ajax({
+          url: "search-store",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {     
+            $( "#pagecontent" ).remove(); 
+            $( "#pagestore" ).remove();         
+            $( "#search-store" ).append( html );
+          });
+      });
+    </script>
+
+  </body>
+</html>

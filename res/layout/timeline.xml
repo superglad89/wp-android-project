@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center_vertical|center_horizontal" >
+   
+	<RelativeLayout
+    android:id="@+id/header"
+  	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="45dip"
+	android:background="#182326">
+	    
+	<ImageButton
+		android:id="@+id/account"
+        android:layout_width="45dip"
+		android:layout_height="45dip"
+		android:layout_alignParentLeft="true"
+        android:background="@drawable/button_hover"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="5dip"
+        android:src="@drawable/wp_back" />
+ 	
+	
+</RelativeLayout>
+     <RelativeLayout
+	    android:id="@+id/content"
+	  	android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_below="@+id/header"
+		android:layout_height="fill_parent"
+		android:background="@drawable/background_header">
+	  
+    <WebView
+        android:id="@+id/webkit"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </WebView> 
+    
+    
+        <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+   </RelativeLayout>
+        
+</RelativeLayout>

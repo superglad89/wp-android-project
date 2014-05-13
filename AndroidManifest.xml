@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wp.webview"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>   
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:icon="@drawable/icon_wp"
+        android:label="@string/app_name"
+        android:theme="@style/CustomTheme" android:debuggable="true">
+        <activity
+            android:name="com.wp.webview.SplashActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait" >
+            
+          <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Menu -->
+        <activity
+            android:name="com.wp.webview.LoginFirst_slideImage"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.wp.webview.LoginFirst"
+            android:screenOrientation="portrait" />
+        
+         <activity
+           android:name="com.wp.webview.SignUp_Native"
+           android:screenOrientation="portrait" />
+         
+         <activity
+           android:name="com.wp.webview.SignUp_Native_First"
+           android:screenOrientation="portrait" />
+          
+         <activity
+           android:name="com.wp.webview.SignUp_Native_Second"
+           android:screenOrientation="portrait" />
+               
+                
+         <!-- Home -->
+        <activity
+            android:name="com.wp.webview.Home"
+            android:configChanges="orientation|screenLayout|screenSize"
+          />
+        
+        <activity
+            android:name="com.wp.webview.Profile"
+            android:configChanges="orientation|screenLayout|screenSize"
+          />
+        
+         <activity
+            android:name="com.wp.webview.Profile_Edit"
+            android:screenOrientation="portrait"
+          />
+         
+          <activity
+            android:name="com.wp.webview.Education_Edit"
+            android:screenOrientation="portrait"
+          />
+         
+         <activity
+            android:name="com.wp.webview.Job_Detail"
+            android:screenOrientation="portrait"
+          />
+        
+         
+         <activity
+            android:name="com.wp.webview.Store_Detail"
+            android:screenOrientation="portrait"
+          />
+         
+         <activity
+            android:name="com.wp.webview.Project_Detail"
+            android:screenOrientation="portrait"
+          />
+         
+         <activity
+            android:name="com.wp.webview.Upload_Image"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait"
+          />
+        
+        <activity
+            android:name="com.wp.webview.Hub"
+            android:configChanges="orientation|screenLayout|screenSize"
+          />
+     
+         <!-- Main Menu -->
+        <activity
+            android:name="com.wp.webview.Swipe_Menu"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait" />
+        
+        
+        
+        <!-- Login Activity -->
+        <activity
+            android:name="com.wp.webview.Login"
+            android:screenOrientation="portrait" 
+            android:noHistory="true"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+         <!--  android:theme="@android:style/Theme.Dialog" -->    
+    
+
+        <activity
+            android:name="com.wp.webview.SignUp"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.wp.webview.Settings"
+            android:screenOrientation="portrait" />
+        
+       <activity
+            android:name="com.wp.webview.Forgot_Password"
+            android:screenOrientation="portrait" />
+        
+        
+        <activity
+            android:name="com.wp.webview.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+    </application>
+
+</manifest>

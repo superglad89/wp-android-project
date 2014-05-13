@@ -1,0 +1,99 @@
+<resources>
+    
+    <style name="DashboardButton">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff29549f</item>
+        <item name="android:background">@null</item>
+    </style>    
+       
+    <style name="ImageTitle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:background">#99000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:typeface">sans</item>
+    </style>    
+    
+     <style name="ButtonContainer">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:background">#99000000</item>
+        <item name="android:gravity">center</item>        
+    </style> 
+    
+    <style name="ButtonText">
+	    <item name="android:layout_width">fill_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textColor">#ffffff</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:layout_margin">15dp</item>
+	    <item name="android:textSize">18dp</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:shadowColor">#000000</item>
+	    <item name="android:shadowDx">1</item>
+	    <item name="android:shadowDy">1</item>
+	    <item name="android:shadowRadius">2</item>
+	</style>
+	
+    <!-- View Pager Style -->
+    
+    <style name="Theme" parent="android:Theme">
+		<item name="android:background">@null</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+	
+	<style name="text_title">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">27dip</item>
+		<item name="android:textSize">15dip</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:gravity">center</item>
+    </style>
+    
+	<style name="text_option">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">@color/black</item>
+    </style>
+    
+	<style name="layout_wrap">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="layout_fill">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+    </style>
+    
+    <style name="layout_f_w">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="h_line">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">2dip</item>
+		<item name="android:background">@color/l_blue</item>
+    </style>
+    
+        <style name="indicator_style">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">5dip</item>
+		<item name="android:background">#F8F8F8</item>
+		<item name="android:orientation">vertical</item>
+    </style>
+    
+</resources>

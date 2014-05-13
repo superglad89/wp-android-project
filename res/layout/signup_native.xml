@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/widget50"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FFFFFF"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+ <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF" >
+
+<RelativeLayout
+	android:id="@+id/login_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:background="#FFFFFF">
+
+ <ImageView 
+    android:id="@+id/logo_image"
+	android:layout_centerHorizontal="true"
+	android:src="@drawable/header"
+	android:layout_height="50dp"
+	android:layout_width="220dp"
+ />
+    
+<EditText
+	android:id="@+id/full_name"
+	android:layout_width="255dp"
+	android:layout_height="wrap_content"
+	android:layout_centerHorizontal="true"
+	android:layout_below="@+id/logo_image"
+	android:layout_marginTop="10dp"
+	android:paddingLeft="10dip"
+	android:drawablePadding="2dip"
+	android:singleLine="true"
+	android:hint="Full Name"
+	android:inputType="text" 
+	android:textSize="16sp"
+	 />
+<EditText
+	android:id="@+id/nick_name"
+	android:layout_width="255dp"
+	android:layout_height="wrap_content"
+	android:singleLine="true"
+	android:layout_centerInParent="true"
+	
+	android:layout_below="@+id/full_name"
+    android:paddingLeft="10dip"
+    android:drawablePadding="2dip"
+	android:inputType="text"
+	android:hint="Nick Name"
+	android:textSize="16sp"
+	 />
+
+	<RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_below="@+id/nick_name"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dip"
+         android:layout_marginBottom="4dip"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" >
+ 
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#929292"
+            android:layout_marginRight="10dip"
+            android:text="Male" 
+            android:checked="true" />
+ 
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textColor="#929292"
+            android:text="Female" />
+ 
+    </RadioGroup>
+
+	<EditText
+	android:id="@+id/email"
+	android:layout_width="255dp"
+	android:layout_height="wrap_content"
+	android:singleLine="true"
+	android:layout_centerInParent="true"
+	
+	android:layout_below="@+id/radioSex"
+    android:paddingLeft="10dip"
+    android:drawablePadding="2dip"
+	android:inputType="textEmailAddress"
+	android:hint="Email"
+	android:textSize="16sp"
+	 />
+	
+	<EditText
+	android:id="@+id/password"
+	android:layout_width="255dp"
+	android:layout_height="wrap_content"
+	android:singleLine="true"
+	android:layout_centerInParent="true"
+	
+	android:layout_below="@+id/email"
+    android:paddingLeft="10dip"
+	android:inputType="textPassword"
+	android:hint="Password"
+	android:textSize="16sp"
+	 />
+	
+	<EditText
+	android:id="@+id/re_password"
+	android:layout_width="255dp"
+	android:layout_height="wrap_content"
+	android:singleLine="true"
+	android:layout_centerInParent="true"
+	
+	android:layout_below="@+id/password"
+    android:paddingLeft="10dip"
+    android:drawablePadding="2dip"
+	android:inputType="textPassword"
+	android:hint="Retype Password"
+	android:textSize="16sp"
+	 />
+	
+	
+<Button
+	android:id="@+id/button_join"
+	android:background="@drawable/blue_button"
+	style="@style/ButtonText"
+	android:layout_width="255dp"
+	android:layout_height="wrap_content"
+	android:layout_centerInParent="true"
+	android:layout_marginTop="10dip"
+	android:layout_below="@+id/re_password"
+	android:text="Join"
+	 />
+
+	 
+</RelativeLayout>
+
+</ScrollView>
+
+</RelativeLayout>

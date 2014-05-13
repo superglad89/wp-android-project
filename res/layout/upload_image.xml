@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+ 
+ <RelativeLayout
+	android:id="@+id/widget50"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#FFFFFF"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+ 
+ <LinearLayout
+     android:orientation="vertical"
+     android:layout_width="400dip"
+     android:layout_height="400dip"
+     android:layout_centerInParent="true"
+     android:background="#ffffff"
+     >
+
+    <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Upload Profile Photo"
+         android:gravity="center"
+         android:id="@+id/Title"
+         android:textColor="#000000"
+         android:textSize="17dip"
+         android:textStyle="bold"
+     />
+     
+     <Button
+         android:id="@+id/button_selectpic"
+         android:layout_width="200dip"
+         android:background="@drawable/blue_button"
+         style="@style/ButtonText"
+         android:layout_gravity="center"
+         android:layout_height="wrap_content"
+         android:text="Browse" />
+     
+     
+     <ImageView
+         android:id="@+id/imageView_pic"
+         android:layout_width="fill_parent"
+         android:layout_height="200dp"
+         android:layout_gravity="center"
+         android:src="@drawable/default_pic" />
+
+     
+     <Button
+         android:layout_width="200dip"
+         android:layout_height="wrap_content"
+         android:text="Upload"
+          android:layout_gravity="center"
+         style="@style/ButtonText"
+         android:background="@drawable/blue_button"
+         android:id="@+id/uploadButton"
+     />
+       
+     <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text=""
+         android:gravity="center"
+         android:id="@+id/messageText"
+         android:textColor="#000000"
+         
+     />
+
+  </LinearLayout>
+  
+ </RelativeLayout>

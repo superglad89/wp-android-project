@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WorkedProfile</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="style/css/bootstrap.css" rel="stylesheet">
+    <link href="style/css/mmenu/jquery.mmenu.all.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="style/css/style.css" rel="stylesheet">
+
+    <script src="style/js/jquery-1.10.2.min.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="style/js/html5shiv.js"></script>
+      <script src="style/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="style/img/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="style/img/ico/favicon.ico">
+  </head>
+  <body>
+  <div id="timeline">
+		<!-- Send Message -->
+		<form method="post" id="formUserCreateChatRequest" name="formUserCreateChatRequest" action="/mobileweb/control/userCreateChatRequest">
+		<div class="send-message media">
+			<input type="hidden" name="partyIdTo" value="Jealousi.Arsyah">
+			<input type="hidden" name="visibleTo" value="Anyone" id="visibleTo">
+			<input type="hidden" name="twitter" value="F" id="twitter">
+			<div class="pull-right">
+				<a href="javascript:document.formUserCreateChatRequest.submit();"><i class="ico-send-message"></i></a>
+			</div>
+		</div>
+		</form>
+		<!-- End Send Message -->
+		<!-- invitation -->
+			<div class="modul-list per-left">
+				<div class="media" style="padding: 5px 0;">
+					<form method="post" name="fOpenHubChat10031" id="fOpenHubChat10031">
+					<input type="hidden" value="10031" name="hubPersonalId">
+					<input type="hidden" value="10009" name="contentId">
+						<a href="profile-notfriend?partyId=teguh.wiguna">
+							<div class="pull-left">
+								<img src="style/img/media/teguh.jpg" alt="..." style="width:40px;height:40px;">
+							</div>
+							<div class="media-body">
+								<div class="row" style="margin-bottom: 5px;">
+									<div class="col-xs-6 col-sm-6 col-md-6" style="font: bold 18px helvetica; text-decoration: none; color:#000;" id="mytext">Teguh Wiguna</div>
+								</div>
+								<p style="font: 14px helvetica !important; color:#666; margin-bottom: 3px;"> at PT. Worked Profile</p>
+							</div>
+						</a>
+					</form>
+					<hr style="border-bottom: 1px solid #e6e6e6; border-top: none;">
+					<p style="font-size: 85%; margin-bottom: 10px;">I would like to add you to my professional profile on workedprofile</p>
+						<input type="submit" value="Accept" class="actionButton positive" onclick="javascript:document.fInvitAcc10031.submit();">
+						<input type="submit" value="Reject" class="actionButton negative" onClick="RejectInvitation()">
+					
+					<form method="post" action="/mobileweb/control/userAcceptInvitation" name="fInvitAcc10031" id="fOpenHubChat10031">
+						<input type="hidden" value="10031" name="hubPersonalId">
+						<input type="hidden" value="10009" name="partyConnectionId">
+					</form>
+					<form method="post" action="/mobileweb/control/userRejectInvitation" name="fInvitReject10031" id="fOpenHubChat10031">
+						<input type="hidden" value="10031" name="hubPersonalId">
+						<input type="hidden" value="10009" name="partyConnectionId">
+					</form>
+					
+				</div>				
+			</div>
+		<!--/ invitation -->
+		<!-- Message Personal right -->
+		<form method="post" action="/mobileweb/control/openHubChat" name="fOpenHubChat10020" id="fOpenHubChat10020">
+		<input type="hidden" value="10020" name="hubPersonalId">
+		<input type="hidden" value="10019" name="contentId">
+		<a href="chat?partyPostId=10019">
+			<div class="modul-box per-right">
+				<div class="row unrow">
+					<div class="col-xs-6 col-sm-6 col-md-6 uncol">
+						<span class="time"><img src="style/img/icon/message.jpg"> 1d</span>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 text-right uncol">
+						<p class="tittle-tab">Jealousi Arsyah</p>
+					</div>
+				</div>
+				<div class="media no-margin">
+					<div class="pull-right">
+						<img class="img-rounded" src="style/img/media/arsyah.jpg" style="width:40px;height:40px;">
+					</div>
+					<div class="media-body">
+						<p style="font-size: 85%;">wer</p>
+					</div>
+				</div>
+			</div>
+		</a>
+		</form>
+		<!-- End Message Personal right -->
+	</div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="style/js/bootstrap.min.js"></script>
+    <script src="style/js/mmenu/jquery.mmenu.js"></script>
+    <script src="style/js/jquery.prettyPhoto.js"></script>
+    <script src="style/js/custom.js"></script>
+    <script src="style/js/jquery.cookie.js"></script>
+    
+        <!-- Android JavaScript -->
+    <script language="javascript">
+    
+		function callFromActivity(msg){
+			document.getElementById("mytext").innerHTML = msg;
+		}
+		
+		function RejectInvitation(){
+        AndroidFunction.RejectInvitation();
+		}
+		
+	</script>  
+
+        <script>
+      // Retrieve Page
+      (function( $ ){
+        $.fn.sp = function() {
+          $.ajax({
+            url: "project-directory",
+            cache: false
+          })
+            .done(function( html ) {
+            $( "#search-project" ).append( html );
+            });
+        };
+        $.fn.spe = function() {
+          $.ajax({
+            url: "professional-directory",
+            cache: false
+          })
+            .done(function( html ) {
+           
+              $( "#search-people" ).append( html );
+            });
+        };
+        $.fn.sj = function() {
+          $.ajax({
+            url: "job-directory",
+            cache: false
+          })
+            .done(function( html ) {
+              $( "#search-job" ).append( html );
+            });
+        };
+        $.fn.ss = function() {
+          $.ajax({
+            url: "storeProductCategory",
+            cache: false
+          })
+            .done(function( html ) {
+          
+              $( "#search-store" ).append( html );
+              // $( this ).seAll();
+            });
+        }; /*
+        $.fn.spf = function() {
+          $.ajax({
+            url: "profile",
+            cache: false
+          })
+            .done(function( html ) {
+              $( "#search-profile" ).append( html );
+              // $( this ).seAll();
+            });
+        }; */
+
+        // Show it up
+        $('html').sp();
+        $('html').spe();
+        $('html').sj();
+        $('html').ss();
+        // $('html').spf();
+      })( jQuery );
+
+      // Bind Search
+      $('#sall').bind('input', function() { 
+
+        // show on console log the current value of the input field.
+        // console.log($(this).val());
+
+        var sall = $(this).val();
+
+        $.ajax({
+          url: "search-project",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {
+            $( "#pageproject" ).remove();      
+            $( "#pagecontent" ).remove();      
+            $( "#search-project" ).append( html );
+          });          
+        
+        $.ajax({
+          url: "search-job",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {     
+            $( "#pagecontent" ).remove(); 
+            $( "#pagejob" ).remove();             
+            $( "#search-job" ).append( html );
+          });
+
+        $.ajax({
+          url: "search-people",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {     
+            $( "#pagecontent" ).remove(); 
+            $( "#pagepeople" ).remove();          
+            $( "#search-people" ).append( html );
+          });        
+        
+        $.ajax({
+          url: "search-store",
+          data: { searchAll : sall },
+          cache: false
+        })
+          .done(function( html ) {     
+            $( "#pagecontent" ).remove(); 
+            $( "#pagestore" ).remove();         
+            $( "#search-store" ).append( html );
+          });
+      });
+    </script>
+
+  </body>
+</html>

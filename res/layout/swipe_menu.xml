@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+ <RelativeLayout
+    android:id="@+id/Main"
+  	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="72dip"
+	android:background="@drawable/header_background"> 
+      
+ <RelativeLayout
+    android:id="@+id/header"
+  	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="45dip"
+	>
+	    
+	<EditText
+		android:id="@+id/keyword"
+		android:layout_width="fill_parent"
+		android:layout_height="45dip"
+		android:layout_marginTop="8dip"
+		android:layout_marginLeft="50dip"
+		android:layout_marginRight="50dip"
+		android:drawableLeft="@drawable/search"
+		android:paddingLeft="8dip"
+		android:inputType="text"
+		android:singleLine="true"
+		android:hint=" Search..."
+		android:layout_centerInParent="true"
+		android:textSize="16sp"
+	 />
+	
+	<!-- <ImageButton
+		android:id="@+id/search_option"
+       	android:layout_width="45dip"
+		android:layout_height="45dip"
+		android:layout_toRightOf="@+id/keyword"
+        android:src="@drawable/search"
+        android:layout_marginRight="5dip"
+	   	android:background="@drawable/button_hover"
+         />	 -->
+	<ImageButton
+		android:id="@+id/profile"
+		android:layout_width="40dip"
+		android:layout_height="40dip"
+	   	android:layout_alignParentRight="true"
+	   	android:src="@drawable/arsyah"
+	   	android:background="@drawable/button_hover"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+	   	android:text="Search" />
+  
+ 	<ImageButton
+		android:id="@+id/hub"
+        android:layout_width="45dip"
+		android:layout_height="45dip"
+		android:layout_alignParentLeft="true"
+        android:background="@drawable/button_hover"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="5dip"
+        android:src="@drawable/icon" />
+    
+ 
+</RelativeLayout>
+    
+ <RelativeLayout
+    android:id="@+id/Tab"
+  	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_below="@+id/header"
+	android:layout_height="25dip"
+	>   
+
+    <TableLayout
+        style="@style/layout_f_w"
+        android:stretchColumns="*" >
+        <TableRow
+            android:id="@+id/tableRow1"
+            style="@style/layout_wrap">
+             <!--   android:background="#6B6B6B" -->
+              <!-- First Tab -->
+	            <LinearLayout
+		        style="@style/layout_f_w"
+		        android:id="@+id/first_text"
+		        android:orientation="vertical" >
+		        
+	                  <TextView
+	                    android:id="@+id/textView1"
+	                    style="@style/text_title"
+	                    android:textStyle="bold"
+	                    android:text="Project" />
+	           </LinearLayout>
+	           
+	        <!-- Second Tab -->
+	            <LinearLayout
+		        style="@style/layout_f_w"
+		        android:id="@+id/second_text"
+		        android:orientation="vertical" >
+
+	                <TextView
+	                    android:id="@+id/textView2"
+	                    style="@style/text_title"
+	                    android:text="Professional" />
+	        
+	           </LinearLayout>
+	           
+	         <!-- Third Tab -->
+	            <LinearLayout
+		        style="@style/layout_f_w"
+		        android:id="@+id/Third_text"
+		        android:orientation="vertical" >
+
+	                <TextView
+	                    android:id="@+id/textView3"
+	                    style="@style/text_title"
+	                    android:text="Job" />
+	        
+	           </LinearLayout>
+	           
+	         <!-- Fourth Tab -->
+	            <LinearLayout
+		        style="@style/layout_f_w"
+		        android:id="@+id/Fourth_text"
+		        android:orientation="vertical" >
+
+	                <TextView
+	                    android:id="@+id/textView4"
+	                    style="@style/text_title"
+	                    android:text="Store" />
+	        
+	           </LinearLayout>
+	     
+        </TableRow>
+    </TableLayout>
+    </RelativeLayout>
+    
+ </RelativeLayout>   
+    <!-- Include Tab Indicator  -->
+ <include layout="@layout/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content"  />
+ 
+ <android.support.v4.view.ViewPager
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:id="@+id/viewPager" />
+</LinearLayout>

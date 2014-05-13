@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login_bg1" />
+
+            <TextView
+                style="@style/ImageTitle"
+                android:text="@string/login_bg1" />
+      
+           
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login_bg2" />
+
+            <TextView
+                style="@style/ImageTitle"
+                android:text="@string/login_bg2" />
+           
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login_bg3" />
+
+            <TextView
+                style="@style/ImageTitle"
+                android:text="@string/login_bg3" />
+            
+           
+        </RelativeLayout>
+        
+        
+         <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login_bg4" />
+
+            <TextView
+                style="@style/ImageTitle"
+                android:text="@string/login_bg4" />
+            
+           
+        </RelativeLayout>
+        
+        
+    </ViewFlipper>
+    
+     	<Button
+				android:id="@+id/button_register"
+				android:background="@drawable/blue_button"
+				style="@style/ButtonText"
+				android:layout_width="120dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentLeft="true"
+				android:layout_marginBottom="10dp"
+				android:layout_marginLeft="25dp"
+				android:text="Register"
+			 />
+   	
+           <Button
+				android:id="@+id/button_login"
+				android:background="@drawable/blue_button"
+				style="@style/ButtonText"
+				android:layout_width="120dp"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentRight="true"
+				android:layout_marginBottom="10dp"
+				android:layout_marginRight="25dp"
+				android:text="Sign In"
+			 />
+</RelativeLayout>
